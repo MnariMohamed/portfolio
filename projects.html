@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/projects.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             z-index: 100;
             transition: all 0.3s ease;
         }
-    </style>
+</style>
 
     <a href="index.html" class="back-button"><i class="fi-arrow-left"></i></a>
 
@@ -51,7 +52,30 @@
 
         <div class="row work-row"> <!-- odd -->
             <div class="small-12 medium-6 medium-push-6 columns">
-                <img src="assets/images/project.PNG" alt="">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./assets/images/project.PNG">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="assets/images/project (2).png">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="assets/images/project.jpg">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
             </div>
             <div class="small-12 medium-5 medium-pull-7 columns">
                 <div class="details details-ftm">
@@ -103,6 +127,7 @@
     </section>
 
     <script src="assets/scripts/app.js" charset="utf-8"></script>
+    <script src="assets/scripts/projects.js"></script>
 </body>
 
 </html>
