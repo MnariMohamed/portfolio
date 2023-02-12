@@ -1,5 +1,13 @@
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideIndex = [1,1,1];
+let slideId = [];
+
+function initSlides() {
+  for (let index = 0; index < slideIndex.length; index++) {
+    slideId.push("mySlides" + (index + 1));
+  }
+}
+initSlides();
+
 
 for (let index = 0; index < slideId.length; index++) {
   showSlides(1, index);
